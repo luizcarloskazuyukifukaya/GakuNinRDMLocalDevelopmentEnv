@@ -1,0 +1,54 @@
+version: "3.4"
+
+services:
+  mfr_requirements:
+    image: rdm-mfr:dev
+  mfr:
+    image: rdm-mfr:dev
+  wb_requirements:
+    image: rdm-wb:dev
+  wb:
+    image: rdm-wb:dev
+  wb_worker:
+    image: rdm-wb:dev
+  ember_osf_web:
+    image: rdm-osf-web:dev
+    environment:
+      - BACKEND=env
+    env_file:
+      - .docker-compose.osf-web.env
+    volumes:
+      - ../RDM-ember-osf-web:/code:cached
+      - ember_osf_web_dist_vol:/code/dist
+  requirements:
+    image: rdm-osf:dev
+  assets:
+    image: rdm-osf:dev
+  admin_assets:
+    image: rdm-osf:dev
+  worker:
+    image: rdm-osf:dev
+  admin:
+    image: rdm-osf:dev
+  api:
+    image: rdm-osf:dev
+  web:
+    image: rdm-osf:dev
+  preprints:
+    environment:
+      - BACKEND=env
+    env_file:
+      - .docker-compose.osf-web.env
+  fakecas:
+    image: quay.io/centerforopenscience/fakecas:master
+    command: fakecas -host=0.0.0.0:8080 -osfhost=ec2.compute-1.amazonaws.com:5000 -dbaddress=postgres://postgres@postgres:5432/osf?sslmode=disable
+  registries:
+    environment:
+      - BACKEND=env
+    env_file:
+      - .docker-compose.osf-web.env
+  reviews:
+    environment:
+      - BACKEND=env
+    env_file:
+      - .docker-compose.osf-web.env
