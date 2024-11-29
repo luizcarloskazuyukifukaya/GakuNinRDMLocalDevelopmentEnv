@@ -1,5 +1,6 @@
-RDM-modular-file-renderer
-RDM-osf.io
-RDM-waterbutler
-public
+RDM-ember-osf-web/*
+RDM-modular-file-renderer/*
+RDM-osf.io/*
+RDM-waterbutler/*
+public/*
 
