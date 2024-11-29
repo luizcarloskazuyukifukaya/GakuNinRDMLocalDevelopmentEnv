@@ -41,7 +41,7 @@ services:
       - .docker-compose.osf-web.env
   fakecas:
     image: quay.io/centerforopenscience/fakecas:master
-    command: fakecas -host=0.0.0.0:8080 -osfhost=localhost:5000 -dbaddress=postgres://postgres@postgres:5432/osf?sslmode=disable
+    command: fakecas -host=0.0.0.0:8080 -osfhost=ec2.compute-1.amazonaws.com:5000 -dbaddress=postgres://postgres@postgres:5432/osf?sslmode=disable
   registries:
     environment:
       - BACKEND=env
