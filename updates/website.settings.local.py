@@ -17,9 +17,9 @@ SECURE_MODE = not DEBUG_MODE  # Disable osf cookie secure
 #       when localhost inside a container != localhost on the client machine/docker host.
 
 PROTOCOL = 'https://' if SECURE_MODE else 'http://'
-DOMAIN = PROTOCOL + '192.168.197.202:5000/'
+DOMAIN = PROTOCOL + '192.168.197.203:5000/'
 INTERNAL_DOMAIN = DOMAIN
-API_DOMAIN = PROTOCOL + '192.168.197.202:8000/'
+API_DOMAIN = PROTOCOL + '192.168.197.203:8000/'
 
 #WATERBUTLER_URL = 'http://localhost:7777'
 #WATERBUTLER_INTERNAL_URL = WATERBUTLER_URL
@@ -31,8 +31,8 @@ PREPRINT_PROVIDER_DOMAINS = {
 }
 USE_EXTERNAL_EMBER = True
 PROXY_EMBER_APPS = True
-EMBER_DOMAIN = environ.get('EMBER_DOMAIN', 'localhost')
-#EMBER_DOMAIN = environ.get('EMBER_DOMAIN', '192.168.197.202')
+#EMBER_DOMAIN = environ.get('EMBER_DOMAIN', 'localhost')
+EMBER_DOMAIN = environ.get('EMBER_DOMAIN', '192.168.197.203/')
 LIVE_RELOAD_DOMAIN = 'http://{}:4200'.format(EMBER_DOMAIN)  # Change port for the current app
 EXTERNAL_EMBER_APPS = {
     'ember_osf_web': {

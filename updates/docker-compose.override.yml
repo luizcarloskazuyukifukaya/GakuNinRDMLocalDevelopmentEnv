@@ -41,10 +41,11 @@ services:
       - .docker-compose.osf-web.env
   fakecas:
     image: quay.io/centerforopenscience/fakecas:master
-    command: fakecas -host=0.0.0.0:8080 -osfhost=192.168.197.202:5000 -dbaddress=postgres://postgres@postgres:5432/osf?sslmode=disable
+    command: fakecas -host=0.0.0.0:8080 -osfhost=192.168.197.203:5000 -dbaddress=postgres://postgres@postgres:5432/osf?sslmode=disable
   registries:
     environment:
       - BACKEND=env
+      - DOCKER_ENABLE_DEPRECATED_PULL_SCHEMA_1_IMAGE=1
     env_file:
       - .docker-compose.osf-web.env
   reviews:
