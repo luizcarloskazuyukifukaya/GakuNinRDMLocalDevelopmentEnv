@@ -5,6 +5,7 @@ cp updates/.docker-compose.osf-web.env RDM-osf.io/
 cp updates/.docker-compose.wb.env RDM-osf.io/
 cp updates/.docker-compose.mfr.env RDM-osf.io/
 cp updates/admin.base.settings.local.py RDM-osf.io/admin/base/settings/local.py
+cp updates/api.base.settings.local.py RDM-osf.io/api/base/settings/local.py
 cp updates/website.settings.local.py RDM-osf.io/website/settings/local.py
 cp updates/docker-compose.override.yml ./RDM-osf.io/
 # Wasabi Endpoints information updates
