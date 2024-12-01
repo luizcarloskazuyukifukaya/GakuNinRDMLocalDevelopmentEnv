@@ -6,4 +6,6 @@
 #SESSION_COOKIE_DOMAIN = '.shared.domain'
 from .defaults import *
 
-ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', 'localhost,osf.io').split(',')
+#ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', 'localhost,osf.io').split(',')
+# for development only
+ALLOWED_HOSTS = ['*']
