@@ -42,3 +42,7 @@ sudo systemctl start docker
 
 # Verify Docker version
 docker --version
+
+# Install docker-compose
+sudo apt  install docker-compose
+docker-compose version
