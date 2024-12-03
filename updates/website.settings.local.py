@@ -31,8 +31,7 @@ PREPRINT_PROVIDER_DOMAINS = {
 }
 USE_EXTERNAL_EMBER = True
 PROXY_EMBER_APPS = True
-#EMBER_DOMAIN = environ.get('EMBER_DOMAIN', 'localhost')
-EMBER_DOMAIN = environ.get('EMBER_DOMAIN', '192.168.197.203')
+EMBER_DOMAIN = environ.get('EMBER_DOMAIN', 'localhost')
 LIVE_RELOAD_DOMAIN = 'http://{}:4200'.format(EMBER_DOMAIN)  # Change port for the current app
 EXTERNAL_EMBER_APPS = {
     'ember_osf_web': {
