@@ -4,6 +4,7 @@
 #         website/settings/local.py    OSF_COOKIE_DOMAIN = '.shared.domain'
 #         admin/base/settings/local.py SESSION_COOKIE_DOMAIN = '.shared.domain'
 #SESSION_COOKIE_DOMAIN = '.shared.domain'
+SESSION_COOKIE_DOMAIN = None
 from .defaults import *
 
 #ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', 'localhost,osf.io').split(',')
