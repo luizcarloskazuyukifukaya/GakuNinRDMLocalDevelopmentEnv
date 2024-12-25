@@ -9,6 +9,6 @@ put all findings and workaround to overcome them. It may be environment
 dependent, so for now, it is just for internal memo.
 
 ## Wasabi Internal Setup Guide
-[GakuNin DRM Development Setup Details](./[Public] GakuNin RDM Setup Details.pdf)
+[GakuNin DRM Development Setup Details](https://github.com/luizcarloskazuyukifukaya/GakuNinRDMLocalDevelopmentEnv/blob/main/%5BPublic%5D%20GakuNin%20RDM%20Setup%20Details.pdf)
 
 [GakuNin DRM Setup Guide(JP)](https://github.com/RCOSDP/RDM-developer-guide/blob/master/Environment.md)
