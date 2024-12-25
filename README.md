@@ -11,4 +11,5 @@ dependent, so for now, it is just for a memo.
 ## Wasabi Internal Setup Guide
 [GakuNin DRM Development Setup Details](./%5BPublic%5D%20GakuNin%20RDM%20Setup%20Details.pdf)
 
+## Public Reference 
 [GakuNin DRM Setup Guide(JP)](https://github.com/RCOSDP/RDM-developer-guide/blob/master/Environment.md)
